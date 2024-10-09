@@ -1,4 +1,4 @@
-package Datastructures.BigONotation;
+package Datastructures.Algorithmic;
 
 public class Cubic {
     public static void main(String[] args) {

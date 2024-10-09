@@ -1,4 +1,4 @@
-package Datastructures.BigONotation;
+package Datastructures.Algorithmic;
 
 public class Constant {
     public static void main(String[] args) {
