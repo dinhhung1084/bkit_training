@@ -1,4 +1,4 @@
-package DSA.Stack;
+package Datastructures.Stack;
 
 import java.util.ArrayList;
 

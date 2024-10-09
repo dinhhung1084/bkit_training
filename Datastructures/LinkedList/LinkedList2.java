@@ -1,4 +1,4 @@
-package DSA.LinkedList;
+package Datastructures.LinkedList;
 
 
 
@@ -11,19 +11,19 @@ public class LinkedList2 {
     }
 
     public void createLinkedList() {
-        DSA.LinkedList.Node node1 = new DSA.LinkedList.Node(11);
+        Datastructures.LinkedList.Node node1 = new Datastructures.LinkedList.Node(11);
         this.head = node1;
 
-        DSA.LinkedList.Node node2 = new DSA.LinkedList.Node(18);
+        Datastructures.LinkedList.Node node2 = new Datastructures.LinkedList.Node(18);
         node1.next = node2;
 
-        DSA.LinkedList.Node node3 = new DSA.LinkedList.Node(24);
+        Datastructures.LinkedList.Node node3 = new Datastructures.LinkedList.Node(24);
         node2.next = node3;
     }
 
-    public void append(DSA.LinkedList.Node newNode) {
+    public void append(Datastructures.LinkedList.Node newNode) {
 
-        DSA.LinkedList.Node current = this.head;
+        Datastructures.LinkedList.Node current = this.head;
 
         if (current == null) {
             this.head = newNode;
@@ -36,9 +36,9 @@ public class LinkedList2 {
 
     }
 
-    public void insert(DSA.LinkedList.Node newNode, int index) {
+    public void insert(Datastructures.LinkedList.Node newNode, int index) {
 
-        DSA.LinkedList.Node current = this.head;
+        Datastructures.LinkedList.Node current = this.head;
         if (index == 0) {
             newNode.next = current;
             this.head = newNode;
@@ -58,8 +58,8 @@ public class LinkedList2 {
 
     public int delete(int index) {
 
-        DSA.LinkedList.Node current = this.head;
-        DSA.LinkedList.Node previous = null;
+        Datastructures.LinkedList.Node current = this.head;
+        Datastructures.LinkedList.Node previous = null;
         int deletedValue = -1;
 
         if (index == 0) {
@@ -85,7 +85,7 @@ public class LinkedList2 {
 
     public void displayLinkedList() {
 
-        DSA.LinkedList.Node current = this.head;
+        Datastructures.LinkedList.Node current = this.head;
         while (current != null) {
             System.out.println(current.data);
             current = current.next;
@@ -96,9 +96,9 @@ public class LinkedList2 {
 
     public static void main(String[] args) {
         LinkedList2 l1 = new LinkedList2();
-        DSA.LinkedList.Node newNode1 = new DSA.LinkedList.Node(22);
-        DSA.LinkedList.Node newNode2 = new DSA.LinkedList.Node(43);
-        DSA.LinkedList.Node newNode3 = new DSA.LinkedList.Node(5);
+        Datastructures.LinkedList.Node newNode1 = new Datastructures.LinkedList.Node(22);
+        Datastructures.LinkedList.Node newNode2 = new Datastructures.LinkedList.Node(43);
+        Datastructures.LinkedList.Node newNode3 = new Datastructures.LinkedList.Node(5);
         l1.createLinkedList();
 
         l1.append(newNode1);

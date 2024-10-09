@@ -1,4 +1,4 @@
-package DSA.LinkedList;
+package Datastructures.LinkedList;
 
 
 public class LinkedList1 {

@@ -1,4 +1,4 @@
-package DSA.Stack;
+package Datastructures.Stack;
 
 public class MinStack {
 
