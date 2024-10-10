@@ -15,7 +15,6 @@ public class BinaryTreeArray {
         return 2 * index + 2;
     }
 
-    // Hàm duyệt tiền thứ tự (Pre-order Traversal)
     public static List<String> preOrder(int index) {
         List<String> result = new ArrayList<>();
         if (index >= binaryTreeArray.length || binaryTreeArray[index] == null) {
@@ -27,7 +26,6 @@ public class BinaryTreeArray {
         return result;
     }
 
-    // Hàm duyệt trung thứ tự (In-order Traversal)
     public static List<String> inOrder(int index) {
         List<String> result = new ArrayList<>();
         if (index >= binaryTreeArray.length || binaryTreeArray[index] == null) {
@@ -39,7 +37,6 @@ public class BinaryTreeArray {
         return result;
     }
 
-    // Hàm duyệt hậu thứ tự (Post-order Traversal)
     public static List<String> postOrder(int index) {
         List<String> result = new ArrayList<>();
         if (index >= binaryTreeArray.length || binaryTreeArray[index] == null) {
