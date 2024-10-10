@@ -25,7 +25,6 @@ public class MergeSort {
             leftIndex++;
         }
 
-
         while (rightIndex < rightArr.length) {
             resultArr.add(rightArr[rightIndex]);
             rightIndex++;
@@ -49,7 +48,6 @@ public class MergeSort {
         int[] arr = {38, 27, 43, 3, 9, 82, 10};
         int[] sortedArr = mergeSort(arr);
 
-        // In mảng đã sắp xếp
         System.out.println(Arrays.toString(sortedArr));
     }
 
