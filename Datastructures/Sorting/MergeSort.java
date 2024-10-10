@@ -46,16 +46,14 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[1000000];
+        int[] arr = new int[10000000];
         Random random = new Random();
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(100000);
         }
-        System.out.println(Arrays.toString(arr));
         long startTime = System.currentTimeMillis();
         mergeSort(arr);
         long endTime = System.currentTimeMillis();
-        System.out.println(Arrays.toString(arr));
         System.out.println("It took: " + (endTime - startTime));
     }
 
