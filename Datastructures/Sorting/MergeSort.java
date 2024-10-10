@@ -3,6 +3,7 @@ package Datastructures.Sorting;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 public class MergeSort {
     public static int[] merge(int[] leftArr,int[] rightArr){
@@ -45,10 +46,17 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {38, 27, 43, 3, 9, 82, 10};
-        int[] sortedArr = mergeSort(arr);
-
-        System.out.println(Arrays.toString(sortedArr));
+        int[] arr = new int[1000000];
+        Random random = new Random();
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = random.nextInt(100000);
+        }
+        System.out.println(Arrays.toString(arr));
+        long startTime = System.currentTimeMillis();
+        mergeSort(arr);
+        long endTime = System.currentTimeMillis();
+        System.out.println(Arrays.toString(arr));
+        System.out.println("It took: " + (endTime - startTime));
     }
 
 }

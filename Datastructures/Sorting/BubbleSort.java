@@ -1,14 +1,22 @@
 package Datastructures.Sorting;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] arr = {38, 27, 43, 3, 9, 82, 10};
-        bubbleSort(arr);
+        int[] arr = new int[1000000];
+        Random random = new Random();
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = random.nextInt(100000);
+        }
         System.out.println(Arrays.toString(arr));
+        long startTime = System.currentTimeMillis();
+        bubbleSort(arr);
+        long endTime = System.currentTimeMillis();
+        System.out.println(Arrays.toString(arr));
+        System.out.println("It took: " + (endTime - startTime));
     }
-
     public static int[] bubbleSort(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
