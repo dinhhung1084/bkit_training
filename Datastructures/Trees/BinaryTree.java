@@ -1,13 +1,11 @@
 package Datastructures.Trees;
 
-import com.sun.source.tree.Tree;
-
-class TreeNode {
+class TreeNode1 {
     String data;
-    TreeNode left;
-    TreeNode right;
+    TreeNode1 left;
+    TreeNode1 right;
 
-    public TreeNode(String data) {
+    public TreeNode1(String data) {
         this.data = data;
         this.left = null;
         this.right = null;
@@ -15,7 +13,7 @@ class TreeNode {
 }
 
 public class BinaryTree {
-    public static void preOrderTraversal(TreeNode node) {
+    public static void preOrderTraversal(TreeNode1 node) {
         if (node == null) {
             return;
         }
@@ -23,7 +21,7 @@ public class BinaryTree {
         preOrderTraversal(node.left);
         preOrderTraversal(node.right);
     }
-    public static void inOrderTraversal(TreeNode node){
+    public static void inOrderTraversal(TreeNode1 node){
         if (node == null){
             return;
         }
@@ -32,7 +30,7 @@ public class BinaryTree {
         inOrderTraversal(node.right);
     }
 
-    public static void postOrderTraversal(TreeNode node){
+    public static void postOrderTraversal(TreeNode1 node){
         if (node == null ){
             return;
         }
@@ -43,14 +41,14 @@ public class BinaryTree {
 
 
     public static void main(String[] args) {
-        TreeNode root = new TreeNode("R");
-        TreeNode nodeA = new TreeNode("A");
-        TreeNode nodeB = new TreeNode("B");
-        TreeNode nodeC = new TreeNode("C");
-        TreeNode nodeD = new TreeNode("D");
-        TreeNode nodeE = new TreeNode("E");
-        TreeNode nodeF = new TreeNode("F");
-        TreeNode nodeG = new TreeNode("G");
+        TreeNode1 root = new TreeNode1("R");
+        TreeNode1 nodeA = new TreeNode1("A");
+        TreeNode1 nodeB = new TreeNode1("B");
+        TreeNode1 nodeC = new TreeNode1("C");
+        TreeNode1 nodeD = new TreeNode1("D");
+        TreeNode1 nodeE = new TreeNode1("E");
+        TreeNode1 nodeF = new TreeNode1("F");
+        TreeNode1 nodeG = new TreeNode1("G");
 
         root.left = nodeA;
         root.right = nodeB;

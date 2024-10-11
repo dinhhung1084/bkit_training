@@ -25,12 +25,14 @@ public class BinarySearch {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = i + 1;
         }
-        System.out.println(Arrays.toString(arr));
+//        System.out.println(Arrays.toString(arr));
         int start = 0;
         int end = arr.length - 1;
         int target = 1024;
+        long startTime = System.currentTimeMillis();
         boolean result = binarySearch(arr, start, end, target);
-        System.out.println("Found target: " + result);
+        long endTime = System.currentTimeMillis();
+        System.out.println("Found target: " + (endTime - startTime) +" "+ result);
     }
 }
 
