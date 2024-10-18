@@ -134,5 +134,6 @@ public class StreamCreation {
         String listToString = productList.stream().map(Product1::getName)
                 .collect(Collectors.joining(", ", "[", "]"));
 
+
     }
 }
